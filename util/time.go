@@ -14,12 +14,12 @@ func (tu timeUtil) Millis(d time.Duration) float64 {
 	return float64(d) / float64(time.Millisecond)
 }
 
-// TimeToFloat64 returns a float64 representation of a time.
+// ToFloat64 returns a float64 representation of a time.
 func (tu timeUtil) ToFloat64(t time.Time) float64 {
 	return float64(t.UnixNano())
 }
 
-// Float64ToTime returns a time from a float64.
+// FromFloat64 returns a time from a float64.
 func (tu timeUtil) FromFloat64(tf float64) time.Time {
 	return time.Unix(0, int64(tf))
 }
@@ -63,7 +63,7 @@ func (tu timeUtil) Start(times ...time.Time) time.Time {
 	return start
 }
 
-// Start returns the earliest (min) time in a list of times.
+// End starts returns the earliest (min) time in a list of times.
 func (tu timeUtil) End(times ...time.Time) time.Time {
 	if len(times) == 0 {
 		return time.Time{}

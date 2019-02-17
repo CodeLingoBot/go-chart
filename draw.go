@@ -270,7 +270,7 @@ func (d draw) BoxCorners(r Renderer, bc BoxCorners, s Style) {
 	r.FillStroke()
 }
 
-// DrawText draws text with a given style.
+// Text: Text draws text with a given style.
 func (d draw) Text(r Renderer, text string, x, y int, style Style) {
 	style.GetTextOptions().WriteToRenderer(r)
 	defer r.ResetStyle()

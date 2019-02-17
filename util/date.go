@@ -110,7 +110,7 @@ func (d date) DateUTC(year, month, day int) time.Time {
 	return time.Date(year, time.Month(month), day, 12, 0, 0, 0, time.UTC)
 }
 
-// DateUTC returns a new time.Time for the given date comonents at (noon) in a given location.
+// Date: Date returns a new time.Time for the given date comonents at (noon) in a given location.
 func (d date) Date(year, month, day int, loc *time.Location) time.Time {
 	return time.Date(year, time.Month(month), day, 12, 0, 0, 0, loc)
 }

@@ -88,12 +88,12 @@ func (vr *vectorRenderer) SetFillColor(c drawing.Color) {
 	vr.s.FillColor = c
 }
 
-// SetLineWidth implements the interface method.
+// SetStrokeWidth: implements the interface method.
 func (vr *vectorRenderer) SetStrokeWidth(width float64) {
 	vr.s.StrokeWidth = width
 }
 
-// StrokeDashArray sets the stroke dash array.
+// SetStrokeDashArray: sets the stroke dash array.
 func (vr *vectorRenderer) SetStrokeDashArray(dashArray []float64) {
 	vr.s.StrokeDashArray = dashArray
 }
